@@ -20,10 +20,10 @@ apt-get install -y --no-install-recommends \
     docker-ce-cli \
     containerd.io \
     docker-buildx-plugin \
-    docker-compose-plugin \
-    tedge-container-plugin
+    docker-compose-plugin
+    #tedge-container-plugin
 
-usermod -aG docker tedge
+# usermod -aG docker tedge
 
 # Copy Docker persist file
 install -D -m 644 "${RECIPE_DIR}/files/docker.toml" -t /etc/rugpi/state
